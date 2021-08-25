@@ -1,0 +1,53 @@
+{
+"Actor": {
+  "types": ["shadowrunner"],
+  "templates": {
+    "background": {
+      "biography": ""
+    },
+    "resources": {
+      "stun": {
+        "min": 0,
+        "value": 0,
+        "max": 10
+      },
+      "physical": {
+        "min": 0,
+        "value": 0,
+        "max": 10
+      },
+	  "init_dice": {
+        "min": 0,
+        "value": 1,
+        "max": 4
+      },
+	  "reaction": {
+        "min": 0,
+        "value": 6,
+        "max": 20
+      }
+    }
+  },
+  "shadowrunner": {
+    "templates": ["background", "resources"]
+    }
+  }
+},
+"Item": {
+  "types": ["weapon", "spell"],
+  "templates": {
+    "rarity": {
+      "rarity": "Common",
+      "price": 20
+    }
+  },
+  "weapon": {
+    "templates": ["rarity"],
+    "damage": 5
+  },
+  "spell": {
+    "templates": ["rarity"],
+    "cost": 2
+  }
+}
+}

@@ -1,0 +1,49 @@
+{
+  "name": "shadowrun3",
+  "title": "Shadowrun 3rd Edition",
+  "description": "Shadowrun 3rd Edition game system.",
+  "version": "0.0.1",
+  "templateVersion": 0,
+  "author": "Robert Smith",
+  "scripts": [
+    "scripts/system-module.js",
+    "scripts/system-script.js"
+  ],
+  "esmodules": [
+    
+  ],
+  "styles": [
+    "styles/system-styles.css"
+  ],
+  "packs": [
+    {
+      "name": "enemies",
+      "label": "Enemies",
+      "path": "packs/monsters.db",
+      "entity": "Actor"
+    },
+    {
+      "name": "gear",
+      "label": "Gear",
+      "path": "packs/items.db",
+      "entity": "Item"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": false,
+  "initiative": "3d6 + 15",
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "resources.stun",
+  "secondaryTokenAttribute": "resources.physical",
+  "url": "https://github.com/LivinBreezy/Shadowrun3-FoundryVTT",
+  "manifest": "https://github.com/LivinBreezy/Shadowrun3-FoundryVTT/system.json",
+  "download": "https://github.com/LivinBreezy/Shadowrun3-FoundryVTT/releases/v0.0.1.zip",
+  "bugs": "https://github.com/LivinBreezy/Shadowrun3-FoundryVTT/issues"
+}
